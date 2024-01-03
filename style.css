@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/*ui=tility classes*/
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+
+
+/*custom styling*/
+
+body {
+	background-image: url("https://preview.redd.it/bpxxqqvps4h91.gif?width=1920&auto=webp&s=cfc8e275c41926cf002775fb17c19acecaa27c5e");
+	background-size: cover;
+	width: 100%;
+	height: 100px;
+	overflow: hidden;
+}
+
+
+.container {
+	max-width: 600px;
+	height: 600px;
+	background: whitesmoke;
+	margin: 100px auto 20px;
+	border-radius: 0px;
+	padding-bottom: 30px;
+	box-shadow: 1px 1px 10px blue;
+	position: relative;
+	
+}
+
+.logo {
+	justify-content: flex-start;
+	background-image: url("https://i.gifer.com/BLkE.gif");
+	/* background-repeat: no-repeat; */
+	width: 100%;
+	padding: 20px;
+
+}
+
+.hmane {
+	font-family: 'Ubuntu', sans-serif;
+	justify-content: center;
+	align-self: center;
+}
+
+.logo img {
+	width: 8rem;
+	border-radius: 150px;
+	/* border: 2px solid red; */
+	/* background-image: url(pexels_videos_2759484\ \(2160p\).mp4); */
+}
+
+.row {
+	justify-content: center;
+	box-shadow: 0px 0px 5px red;
+	border-radius: 50px;
+	margin: 5px 25px;
+}
+
+.row input {
+	width: 100%;
+	padding: 10px 5px;
+	border: none;
+	font-size: 1rem;
+	outline: none;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 0px;
+	border-top-right-radius: 0px;
+	background: white;
+	color: gray;
+	text-indent: 15px;
+
+}
+
+.row button {
+	margin-left: -10px;
+	padding: 10px 30px;
+	border-radius: 50px;
+	border: none;
+	font-size: 18px;
+	outline: none;
+	background: red;
+	font-weight: bolder;
+	color: white;
+	box-shadow: 0px 0px 5px black;
+
+	cursor: pointer;
+}
+
+.row button:hover {
+	transition-duration: 1s;
+	background: green;
+}
+
+.list {
+	list-style-type: none;
+	padding: 10px 20px;
+	margin-inline: 40px;
+}
+
+.list li {
+	margin-block: 10px;
+	cursor: pointer;
+	user-select: none;
+	padding: 6px;
+	position: relative;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+}
+
+ul li::before {
+	content: "";
+	position: absolute;
+	background-image: url('uncheck.png');
+	position: absolute;
+	font-family: 'Ubuntu', sans-serif;
+	margin-right: 10px;
+	background-size: cover;
+	background-position: center;
+	left: -20px;
+	width: 17px;
+	height: 19px;
+	line-height: 19px;
+	border-radius: 50%;
+	box-shadow: 1px 0px 5px red;
+
+
+}
+
+.checked {
+	color: black;
+	text-decoration: line-through;
+
+}
+
+ul li.checked::before {
+
+	content: "";
+	position: absolute;
+	background-image: url('check.jpg');
+	margin-right: 10px;
+	background-size: cover;
+	background-position: center;
+	left: -20px;
+	line-height: 19px;
+	width: 17px;
+	height: 19px;
+
+
+}
+
+ul li span {
+	position: absolute;
+	right: 0;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 1.6rem;
+	color: grey;
+	border-radius: 20px;
+}
+
+ul li span:hover {
+	background: green;
+}
+
+.logo flex{
+	background-color: whitesmoke;
+}
